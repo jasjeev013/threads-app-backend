@@ -54,5 +54,8 @@ class UserService {
             return token;
         });
     }
+    static decodeJWTToken(token) {
+        return jsonwebtoken_1.default.verify(token, JWT_SECRET);
+    }
 }
 exports.default = UserService;

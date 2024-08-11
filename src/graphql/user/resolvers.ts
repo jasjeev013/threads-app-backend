@@ -7,6 +7,10 @@ const queries = {
             password: payload.password
         });
         return token;
+    },
+
+    getCurrentLoggedInUser: async (_:any,parameters:any,context: any) => {
+        return 'I dont know'
     }
 }
 

@@ -21,6 +21,9 @@ const queries = {
             password: payload.password
         });
         return token;
+    }),
+    getCurrentLoggedInUser: (_, parameters, context) => __awaiter(void 0, void 0, void 0, function* () {
+        return 'I dont know';
     })
 };
 const mutations = {
