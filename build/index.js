@@ -18,7 +18,7 @@ const graphql_1 = __importDefault(require("./graphql"));
 function init() {
     return __awaiter(this, void 0, void 0, function* () {
         const app = (0, express_1.default)();
-        const PORT = Number(process.env.PORT) || 8000;
+        const PORT = Number(process.env.PORT) || 5000;
         app.use(express_1.default.json());
         // Create Graphql Server
         app.get('/', (req, res) => {
